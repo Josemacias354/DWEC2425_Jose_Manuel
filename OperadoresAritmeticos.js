@@ -1,31 +1,39 @@
+// Operadores Aritméticos
+
+console.log(5 + 3); //suma
+console.log( 10 - 4); //resta
+console.log( 4 * 7); //multiplicacion
+console.log(20 / 5); //division
+console.log(10 % 3); //modulo
+
 let incremento = 5;
-console.log(incremento++); // Output: 5, then incremento becomes 6
+console.log(incremento++); //incremento
 
 let decremento = 5;
-console.log(decremento--); // Output: 5, then decremento becomes 4
+console.log(decremento--);  //decremento
 
-console.log(2 ** 3); // Output: 8, potencia
+console.log((2 ** 3));  //potencia
 
 // Operadores logicos
 // Operaciones AND
-console.log(`1 = ${true && true}`); // Output: 1 = true
-console.log(`2 = ${true && false}`); // Output: 2 = false
-console.log(`3 = ${false && true}`); // Output: 3 = false
-console.log(`4 = ${false && (3 == 4)}`); // Output: 4 = false
-console.log(`5 = ${'Gato' && 'Perro'}`); // Output: 5 = Perro
-console.log(`6 = ${false && "Gato"}`); // Output: 6 = false
-console.log(`7 = ${"Gato" && false}`); // Output: 7 = false
+console.log(`1 = ${true && true}`); //true
+console.log(`2 = ${true && false}`); //false
+console.log(`3 = ${false && true}`); //false
+console.log(`4 = ${false && (3 == 4)}`); //false
+console.log(`5 = ${'Gato' && 'Perro'}`); //Perro
+console.log(`6 = ${false && "Gato"}`); //false
+console.log(`7 = ${"Gato" && false}`); //false
 
 // Operaciones OR
-console.log(`8 = ${true || true}`); // Output: 8 = true
-console.log(`9 = ${false || true}`); // Output: 9 = true
-console.log(`10 = ${true || false}`); // Output: 10 = true
-console.log(`11 = ${true || (3 == 4)}`); // Output: 11 = true
-console.log(`12 = ${'Gato' || 'Perro'}`); // Output: 12 = Gato
-console.log(`13 = ${false || 'Gato'}`); // Output: 13 = Gato
-console.log(`14 = ${'Gato' || false}`); // Output: 14 = Gato
+console.log(`8 = ${true || true}`); //true
+console.log(`9 = ${false || true}`); //true
+console.log(`10 = ${true || false}`); //true
+console.log(`11 = ${true || (3 == 4)}`);// true
+console.log(`12 = ${'Gato' || 'Perro'}`); // Gato
+console.log(`13 = ${false || 'Gato'}`); //Gato
+console.log(`14 = ${'Gato' || false}`); //Gato
 
 // Operaciones NOT
-console.log(`15 = ${!true}`); // Output: 15 = false
-console.log(`16 = ${!false}`); // Output: 16 = true
-console.log(`17 = ${!'Gato'}`); // Output: 17 = false
+console.log(`15 = ${!true}`); //false
+console.log(`16 = ${!false}`); //true
+console.log(`17 = ${!'Gato'}`); //false
