@@ -15,3 +15,17 @@ do {
     letrasDNI.push(letraDNI); // Guardar la letra en el array
 
 } while (true);
+
+let dnis = [];
+function mostrardni() {
+let dni = prompt('Introduce tu número de DNI o -1 para salir:');
+dnis.push(dni);
+
+if (dni === '-1') {
+    clearInterval(intervalo);
+    return;
+
+
+
+
+}
