@@ -3,7 +3,9 @@ let letrasDNI = []; // Array para almacenar las letras de los DNI
 
 do {
     dni = prompt('Introduce tu número de DNI o -1 para salir:');
-    if (dni === '-1') return letrasDNI; 
+    if (dni === '-1') {
+        break;
+    }
 
     if (dni.length !== 9) {
         alert('El DNI introducido no es correcto.');
@@ -28,4 +30,4 @@ if (dni === '-1') {
 
 
 
-}
+}}
