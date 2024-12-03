@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<form id="formulario" onsubmit="return validar()">
+  <input type="text" id="mail" required>
+  <button type="submit">Enviar</button>
+</form>
+<script>
+  function validar() {
+    var phoneNumber = document.getElementById('mail').value;
+    var phoneRGEX = /^[a-zA-Z0-9/.]{1,32}[0-9]{0,99}[@]{1}[a-z]{1,9}[.]{1}[a-z]{1,3}$/;
+    var phoneResult = phoneRGEX.test(phoneNumber);
+    alert(phoneResult);
+    return phoneResult;
+  }
+  // Phone number Spain
+  /* /^(\+34|0034|34)?[6|7|9][0-9]{8}$/;
+  */
+
+</script>
+
+</body>
+</html>
