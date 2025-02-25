@@ -17,7 +17,26 @@
         alert(phoneResult);
         return phoneResult;
     }
-
+/*
+Regex para el número de teléfono
+* ^: Indica el inicio de la cadena.
+[(]{0,1}: Permite un paréntesis de apertura opcional.
+[0,9]{3}: Tres dígitos del 0 al 9.
+[)]{0,1}: Permite un paréntesis de cierre opcional.
+[-\s\.]{0,1}: Permite un guion, un espacio o un punto opcional.
+[0,9]{3}: Tres dígitos del 0 al 9.
+[-\s\.]{0,1}: Permite un guion, un espacio o un punto opcional.
+[0,9]{4}: Cuatro dígitos del 0 al 9.
+$: Indica el final de la cadena.
+*
+Regex para el código postal (comentado):
+/^(\+34|0034|34)?[6|7|9][0-9]{8}$/;
+^: Indica el inicio de la cadena.
+(\+34|0034|34)?: Permite un prefijo opcional de España (+34, 0034 o 34).
+[6|7|9]: El primer dígito debe ser 6, 7 o 9.
+[0-9]{8}: Ocho dígitos del 0 al 9.
+$: Indica el final de la cadena.
+*/
 </script>
 
 </body>
